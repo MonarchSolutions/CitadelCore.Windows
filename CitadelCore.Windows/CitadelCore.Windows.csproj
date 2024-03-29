@@ -43,8 +43,11 @@ Fixes an issue where the Headers property of HttpMessageInfo objects can be null
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CitadelCore" Version="4.2.5" />
     <PackageReference Include="WinDivertSharp" Version="1.4.3.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CitadelCore\CitadelCore\CitadelCore.csproj" />
   </ItemGroup>
     
   <Target Name="CollectRuntimeOutputs" BeforeTargets="_GetPackageFiles">
